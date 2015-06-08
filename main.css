@@ -1,0 +1,20 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer .lower-footer .terms, footer .lower-footer .policy {
+    color: #566472;
+}
+
+footer .lower-footer .copyriught {
+    color: #7a85a6;
+}
+
+.container-header {
+    width: 80%;
+}
