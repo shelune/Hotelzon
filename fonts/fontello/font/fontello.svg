@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="right-big" unicode="&#xe800;" d="m821 314q0-30-20-50l-363-364q-22-20-51-20-29 0-50 20l-42 42q-22 21-22 51t22 51l163 163h-393q-29 0-47 21t-18 51v71q0 30 18 51t47 20h393l-163 164q-22 21-22 51t22 50l42 42q21 21 50 21 29 0 51-21l363-363q20-20 20-51z" horiz-adv-x="857.1" />
+<glyph glyph-name="down-open" unicode="&#xe801;" d="m939 399l-414-413q-10-11-25-11t-25 11l-414 413q-11 11-11 26t11 25l92 92q11 11 26 11t25-11l296-296 296 296q11 11 25 11t26-11l92-92q11-11 11-25t-11-26z" horiz-adv-x="1000" />
+<glyph glyph-name="search" unicode="&#xe802;" d="m772 78q30-34 6-62l-46-46q-36-32-68 0l-190 190q-74-42-156-42-128 0-223 95t-95 223 90 219 218 91 224-95 96-223q0-88-46-162z m-678 358q0-88 68-156t156-68 151 63 63 153q0 88-68 155t-156 67-151-63-63-151z" horiz-adv-x="789" />
+<glyph glyph-name="globe" unicode="&#xe803;" d="m480 830q200 0 340-141t140-339q0-200-140-340t-340-140q-198 0-339 140t-141 340q0 198 141 339t339 141z m410-480q0 132-78 239t-202 149q-18-24-16-32 4-38 18-51t30-7l32 12t20 2q22-24 0-47t-45-56-1-77q34-64 96-64 28-2 43-36t17-66q10-80-14-140-22-44 14-76 86 112 86 250z m-466 404q-112-14-199-84t-127-174q6 0 22-2t28-3 26-4 24-8 12-13q4-12-14-45t-18-61q0-30 38-56t38-46q0-28 8-68t8-44q0-12 36-54t52-42q10 0 11 22t-2 54-3 40q0 32 14 74 12 42 59 70t55 46q16 34 9 61t-17 43-34 28-41 17-37 9-22 4q-16 6-42 7t-36-3-27 11-17 29q0 10 15 27t35 37 28 30q8 14 17 21t22 16 27 21q4 4 25 17t27 23z m-72-794q66-20 128-20 128 0 226 68-26 44-118 34-24-2-65-17t-47-17q-74-16-76-16-12-2-26-14t-22-18z" horiz-adv-x="960" />
+</font>
+</defs>
+</svg>
