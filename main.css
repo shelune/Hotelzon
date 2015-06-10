@@ -254,13 +254,13 @@ button.search-button:hover {
     height: 120px;
     width: 100%;
     background-color: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.book-hotel .book-hotel-choice {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
+.book-hotel-container {
+    width: 72%;
 }
 
 .book-hotel ul {
@@ -306,6 +306,10 @@ button.book-button {
 
 button.book-button:hover {
     background-color: #6BB224;
+}
+
+.cancel {
+    
 }
 
 hr.main-hr {
