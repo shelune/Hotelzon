@@ -11,6 +11,18 @@ header {
     height: 660px;
 }
 
+button {
+    border-radius: 0;
+    padding: 5px;
+    appearance: none;
+    box-shadow: none;
+    color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 ul {
     list-style: none;
     text-shadow: none;
@@ -25,6 +37,26 @@ a {
     color: #fff;
 }
 
+input[type="text"] {
+    padding-left: 5%;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+:-ms-input-placeholder {  
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.25;
+}
+
+::webkit-input-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.25;
+}
+
+::-moz-placeholder {
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.25;
+}
+
 p small {
     color: white;
     float: right;
@@ -32,7 +64,7 @@ p small {
 
 h1 {
     color: #fff;
-    text-align: center;
+    line-height: 1.4;
 }
 
 footer .lower-footer .terms, footer .lower-footer .policy {
@@ -81,6 +113,7 @@ footer .lower-footer .copyright {
 
 .lang-box:target {
     display: block;
+    z-index: 1;
 }
 
 .lang-box ul li {
@@ -109,6 +142,7 @@ footer .lower-footer .copyright {
 
 .search-box:target {
     display: inline-block;
+    z-index: 1;
 }
 
 .search-content {
@@ -164,9 +198,53 @@ footer .lower-footer .copyright {
 .lower-part .right-login {
     position: relative;
     float: right;
+    margin-top: 1%;
 }
 
 .lower-part .right-login ul li {
     margin-right: -5px;
 }
+
+.right-login ul li input[type="text"] {
+    line-height: 36px;
+    width: 230px;
+}
+
+button.login {
+    background: #29A329;
+    border: 1px solid #259325;
+    height: 40px;
+    width: 90px;
+}
+
+button.login:hover {
+    background-color: #218221;
+}
+
+.heading {
+    text-align: center;
+}
+
+.main-heading {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 300;
+    text-shadow: 1px 1px rgba(0,0,0,0.14);
+    margin-top: 3em;
+    width: 560px;
+    padding: 3%;
+}
+
+button.search-button {
+    background: #0066FF;
+    border: 1px solid #005CE6;
+    padding: 0.75%;
+    width: 130px;
+}
+
+button.search-button:hover {
+    background-color: #1655E7;
+}
+
 
