@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url(fonts/Open_Sans_Light/OpenSans-Light.woff);
+}
+
 body {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -13,8 +18,6 @@ header {
 
 button {
     border-radius: 0;
-    padding: 5px;
-    appearance: none;
     box-shadow: none;
     color: white;
     border: 1px solid rgba(0,0,0,0.1);
@@ -38,23 +41,23 @@ a {
 }
 
 input[type="text"] {
-    padding-left: 5%;
+    padding: 0 15px;
     border: 1px solid rgba(0,0,0,0.1);
 }
 
 :-ms-input-placeholder {  
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
 ::webkit-input-placeholder {
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
 ::-moz-placeholder {
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.25;
+    opacity: 0.35;
 }
 
 p small {
@@ -63,12 +66,13 @@ p small {
 }
 
 h1 {
+    font-size: 250%;
     color: #fff;
     line-height: 1.4;
 }
 
 h2 {
-    font-weight: 300;
+    font-weight: 100;
     color: #008AB8;
     font-size: 225%;
 }
@@ -202,7 +206,6 @@ hr.jumbotron-hr {
 }
 
 .lower-header .right-login {
-    position: relative;
     float: right;
     margin-top: 1%;
 }
@@ -233,13 +236,11 @@ button.login:hover {
 
 .main-heading {
     margin: 0 auto;
-    text-align: center;
-    font-size: 250%;
-    font-weight: 300;
-    text-shadow: 1px 1px rgba(0,0,0,0.14);
+    text-shadow: 1px 1px rgba(0,0,0,0.2);
     margin-top: 3em;
     width: 560px;
     padding: 3%;
+    font-family: 'Open Sans Light', sans-serif;
 }
 
 button.search-button {
@@ -266,7 +267,7 @@ button.search-button:hover {
 }
 
 .book-hotel-container {
-    width: 72%;
+    width: 75%;
 }
 
 .book-hotel ul {
@@ -286,13 +287,13 @@ button.search-button:hover {
 }
 
 .book-hotel ul li input[type="text"] {
-    line-height: 36px;
-    width: 230px;
+    line-height: 40px;
+    width: 220px;
 }
 
 .book-hotel ul li select {
-    height: 40px;
-    width: 230px;
+    height: 42px;
+    width: 220px;
     border-radius: 0;
     border: 1px solid rgba(0,0,0,0.1);
     font-family: 'Open Sans', sans-serif;
@@ -305,17 +306,13 @@ button.search-button:hover {
 }
 
 button.book-button {
-    height: 40px;
+    height: 42px;
     background: #7ACC29;
     width: 190px;
 }
 
 button.book-button:hover {
     background-color: #6BB224;
-}
-
-.cancel {
-    
 }
 
 hr.main-hr {
@@ -421,15 +418,52 @@ hr.main-hr {
 .subscribe {
     z-index: -1;
     background: url('img/city-image.jpg');
-    height: 660px;
+    height: 680px;
 }
 
 .container-subscribe {
     width: 70%;
-    display: flex;
     margin: auto;
+    display: flex;
+    position: relative;
 }
 
 .news-heading {
     position: absolute;
+    margin-top: 10%;
+}
+
+.news-heading h1 {
+    margin-bottom: -2%;
+}
+
+.news-heading p {
+    font-family: 'Open Sans Light', sans-serif;
+    width: 70%;
+    color: #fff;
+    font-size: 200%;
+}
+
+.news-heading ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    margin-left: -3.5%;
+}
+
+.news-heading ul li input[type="text"] {
+    line-height: 42px;
+    width: 350px;
+    border: none;
+}
+
+.submit {
+    border: none;
+    width: 380px;
+    height: 42px;
+    background: #7ACC29;
 }
