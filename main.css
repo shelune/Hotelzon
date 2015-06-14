@@ -12,8 +12,8 @@ body {
 
 header {
     z-index: -1;
-    background: url('img/city-image.jpg');
-    height: 660px;
+    background: url('img/hotelzon_jumbotron.jpg') bottom;
+    height: 672px;
 }
 
 button {
@@ -69,6 +69,7 @@ h1 {
     font-size: 250%;
     color: #fff;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 h2 {
@@ -92,20 +93,21 @@ footer .lower-footer .copyright {
 
 .left-side {
     float: left;
-    width: 244px;
-    padding: 1em;
+    margin-top: 25px;
+}
+
+.left-side img {
+    width: 197px;
 }
 
 .right-side {
     position: relative;
     float: right;
     padding: 1em;
-    margin-right: 20px;
 }
 
 .right-side ul li {
     display: inline;
-    padding-right: 1em;
     color: #fff;
 }
 
@@ -215,13 +217,13 @@ hr.jumbotron-hr {
 }
 
 .right-login ul li input[type="text"] {
-    line-height: 37px;
-    width: 230px;
+    line-height: 39.5px;
+    width: 200px;
 }
 
 button.login {
     background: #7ABA3A;
-    height: 40.5px;
+    height: 41.5px;
     width: 90px;
     border: 0;
 }
@@ -256,7 +258,7 @@ button.search-button:hover {
 
 .book-hotel {
     position: absolute;
-    margin-top: 540px;
+    margin-top: 552px;
     text-align: center;
     height: 120px;
     width: 100%;
@@ -345,21 +347,23 @@ hr.main-hr {
     width: 33%;
     height: 192px;
     position: relative;
+    background-position: center;
+    font-weight: 400;
 }
 
 .container-features {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/business-thumbnail.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/man_hotelroom.jpg');
     background-size: cover;
 }
 
 .container-news {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/business-thumbnail.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/card_laptop.jpg');
     background-size: cover;
     margin: 0 2%;
 }
 
 .container-signup {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/business-thumbnail.jpg');
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/about_travelport.jpg');
     background-size: cover;
 }
 
@@ -417,11 +421,12 @@ hr.main-hr {
 
 .subscribe {
     z-index: -1;
-    background: url('img/city-image.jpg');
-    height: 680px;
+    background: url('img/woman_laptop.jpg');
+    background-position: center;
+    height: 672px;
 }
 
-.container-subscribe {
+.container-subscribe, .more-news {
     width: 70%;
     margin: auto;
     display: flex;
@@ -430,7 +435,7 @@ hr.main-hr {
 
 .news-heading {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 135px;
 }
 
 .news-heading h1 {
@@ -466,4 +471,58 @@ hr.main-hr {
     width: 380px;
     height: 42px;
     background: #7ACC29;
+}
+
+.more-news .container-more-news {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.more-news .news-piece {
+    width: 267px;
+    height: 440px;
+    background: #0075B0 scroll 0% 0%;
+    color: #fff;
+    position: relative;
+    margin: -20px 12px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    position: relative;
+}
+
+.news-piece-empty {
+    display: none;
+}
+
+.more-news .news-piece img {
+    width: 100%;
+}
+
+.news-details {
+    width: 85%;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 23px;
+    line-height: 1.3;
+}
+
+.small-date {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    opacity: 0.5;
+    padding: 15px 20px 10px 20px;
+    border-top: 1px solid rgba(255,255,255,.25);
 }
