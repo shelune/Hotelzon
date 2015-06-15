@@ -78,12 +78,10 @@ h2 {
     font-size: 225%;
 }
 
-footer .lower-footer .terms, footer .lower-footer .policy {
-    color: #566472;
-}
-
-footer .lower-footer .copyright {
-    color: #7a85a6;
+footer {
+    margin-top: 66px;
+    width: 100%;
+    color: #fff;
 }
 
 .container-header {
@@ -103,7 +101,7 @@ footer .lower-footer .copyright {
 .right-side {
     position: relative;
     float: right;
-    padding: 1em;
+    margin-top: 20px;
 }
 
 .right-side ul li {
@@ -525,4 +523,77 @@ hr.main-hr {
     opacity: 0.5;
     padding: 15px 20px 10px 20px;
     border-top: 1px solid rgba(255,255,255,.25);
+}
+
+.container-upper-footer {
+    height: 407px;
+    width: 70%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+
+.upper-footer {
+    background: #0075B0 scroll 0% 0%;
+}
+
+.travelport-hotelzon, .for-hotels, .for-companies, .contact-info {
+    width: 20%;
+    margin: 45px 15px;
+}
+
+.upper-footer ul {
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+.upper-footer ul li {
+    display: block;
+}
+
+.upper-footer h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lower-footer {
+    height: 112px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-info {
+    font-size: 16px;
+}
+
+.media {
+    margin-top: 20px;
+}
+
+.media img {
+    margin-right: 7px;
+}
+
+.terms, .policy, .copyright {
+    color: gray;
+}
+
+.terms a, .policy a {
+    color: black;
+}
+
+.right-side-btm, .left-side-btm {
+    position: relative;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-side-btm {
+    float: left;
 }
