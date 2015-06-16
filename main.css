@@ -12,7 +12,7 @@ body {
 
 header {
     z-index: -1;
-    background: url('img/hotelzon_jumbotron.jpg') bottom;
+    background: url('img/hotelzon_jumbotron.jpg') center bottom;
     height: 672px;
 }
 
@@ -248,6 +248,8 @@ button.search-button {
     border: 1px solid #005CE6;
     padding: 0.75%;
     width: 130px;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 button.search-button:hover {
@@ -412,7 +414,15 @@ hr.main-hr {
     font-size: 0.95em;
 }
 
-.features p:last-child {
+.news ul li a {
+    color: #5A5A5A;
+}
+
+.news ul li a:hover {
+    color: #008AB8;
+}
+
+.features a {
     color: #008AB8;
     font-size: 1.1em;
 }
@@ -469,6 +479,11 @@ hr.main-hr {
     width: 380px;
     height: 42px;
     background: #7ACC29;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #6BB224;;
 }
 
 .more-news .container-more-news {
