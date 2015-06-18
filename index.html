@@ -5,7 +5,7 @@
     <title>Hotelzon homepage</title>
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300, 400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <header>
@@ -65,10 +65,10 @@
                             <!-- <input type="button" class="login" value="Login"> -->
                         </li>
                     </ul>
-                    <p><small><a href="#">Forgot Password?</a></small></p>
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
                 </div>
                 <div class="heading">
-                    <h1 class="main-heading">Explore over hundred of thousands of hotels worldwide</h1>
+                    <h1 class="main-heading">Explore over hundreds of thousands of hotels worldwide</h1>
                     <button class="search-button">Search&nbsp;<i class="icon-right-big"></i></button>
                 </div>
             </div>        
@@ -76,29 +76,27 @@
 
         <div class="book-hotel">
             <div class="book-hotel-container">
-                <div class="book-hotel-choice">
-                    <ul>
-                        <li>
-                            <input type="text" name="where-to" placeholder="Where do you want to go?">
-                        </li>
-                        <li>
+                <ul>
+                    <li>
+                        <input type="text" name="where-to" placeholder="Where do you want to go?">
+                    </li>
+                    <li>
                         <select name="room-type">
-                                <option selected>Single Room</option>
-                                <option>Double Room</option>
-                            </select>
-                        </li>
-                        <li>
-                            <input type="text" name="arrival-date" placeholder="Arrival Date" class="datepicker">
-                        </li>
-                        <li>
-                            <input type="text" name="departure-date" placeholder="Departure Date" class="datepicker">
-                        </li>
-                        <li>
-                            <button class="book-button">Book Hotel&nbsp;<i class="icon-right-big"></i></button>
-                        </li>
-                    </ul>
-                </div> 
-                <p class="cancel"><small><a href="#">Cancel or edit booking</a></small></p> 
+                            <option selected>Single Room</option>
+                            <option>Double Room</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" name="arrival-date" placeholder="Arrival Date" class="datepicker">
+                    </li>
+                    <li>
+                        <input type="text" name="departure-date" placeholder="Departure Date" class="datepicker">
+                    </li>
+                    <li>
+                        <button class="book-button">Book Hotel&nbsp;<i class="icon-right-big"></i></button>
+                    </li>
+                </ul>
+                <p class="cancel"><a href="#">Cancel or edit booking</a></p> 
             </div>
         </div>
     </header>

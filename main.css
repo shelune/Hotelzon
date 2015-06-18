@@ -8,12 +8,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9em;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header {
     z-index: -1;
     background: url('img/hotelzon_jumbotron.jpg') center bottom;
-    height: 672px;
+    height: 689px;
 }
 
 button {
@@ -41,28 +43,28 @@ a {
 }
 
 input[type="text"] {
-    padding: 0 15px;
+    padding: 0 15.5px;
     border: 1px solid rgba(0,0,0,0.1);
 }
 
 :-ms-input-placeholder {  
     font-family: 'Open Sans', sans-serif;
     opacity: 0.35;
+    font-size: 0.875rem;
 }
 
 ::webkit-input-placeholder {
     font-family: 'Open Sans', sans-serif;
     opacity: 0.35;
+    font-size: 0.875rem;
+
 }
 
 ::-moz-placeholder {
     font-family: 'Open Sans', sans-serif;
-    opacity: 0.35;
-}
+    opacity: 0.3;
+    font-size: 0.875rem;
 
-p small {
-    color: white;
-    float: right;
 }
 
 h1 {
@@ -85,13 +87,14 @@ footer {
 }
 
 .container-header {
-    width: 70%;
+    max-width: 1236px;
     margin: 0 auto;
 }
 
 .left-side {
     float: left;
     margin-top: 25px;
+    padding-left: 48px;
 }
 
 .left-side img {
@@ -101,12 +104,15 @@ footer {
 .right-side {
     position: relative;
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
+    padding-right: 56px;
+    font-size: 100%;
 }
 
 .right-side ul li {
     display: inline;
     color: #fff;
+    padding-right: 2px;
 }
 
 .lang-box {
@@ -173,19 +179,15 @@ footer {
     outline: none;
 }
 
-.search-icon {
-    box-sizing: border-box;
-}
-
 hr.jumbotron-hr {
-    width: 70%;
+    width: 68.5%;
+    margin: 80px 0 0 48px;
     position: absolute;
-    margin-top: 5%;
     border: 0;
     height: 1px;
     background: #fff;
     background-image: linear-gradient(to right,  rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    opacity: 0.35;
+    opacity: 0.2;
 }
 
 .lower-header {
@@ -194,10 +196,11 @@ hr.jumbotron-hr {
     margin-top: 5%;
 }
 
-.lower-header .left-link {
+.left-link {
     float: left;
-    margin-top: 20px;
-    font-size: 250%;
+    margin: 20px 0 0 48px;
+    font-size: 260%;
+    font-weight: 300;
     color: #fff;
 }
 
@@ -205,51 +208,65 @@ hr.jumbotron-hr {
     color: #CDCED0;
 }
 
-.lower-header .right-login {
+.right-login {
     float: right;
     margin-top: 1%;
+    margin-right: -24px;
 }
 
-.lower-header .right-login ul li {
-    margin-right: -5px;
+.right-login ul {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+p.forgot-password {
+    margin-top: -5px;
+    font-size: 0.75rem;
+    float: right;
 }
 
 .right-login ul li input[type="text"] {
-    line-height: 39.5px;
+    line-height: 40px;
     width: 200px;
 }
 
 button.login {
-    background: #7ABA3A;
-    height: 41.5px;
-    width: 90px;
+    background: #78BE20;
+    height: 42px;
+    width: 93px;
     border: 0;
+    font-weight: 600;
 }
 
 button.login:hover {
-    background-color: #60A020;
+    background-color: #6AA81C;
+    border-color: #6AA81C;
 }
 
 .heading {
     text-align: center;
+    padding: 10px 0 20px 72px;
 }
 
 .main-heading {
+    text-align: center;
+    font-size: 2.375rem;
+    line-height: 1.263;
     margin: 0 auto;
     text-shadow: 1px 1px rgba(0,0,0,0.2);
-    margin-top: 3em;
+    margin-top: 157px;
     width: 560px;
-    padding: 3%;
-    font-family: 'Open Sans Light', sans-serif;
 }
 
 button.search-button {
-    background: #0066FF;
-    border: 1px solid #005CE6;
+    margin: 24px 8px 0 0;
+    background: #0075B0;
     padding: 0.75%;
     width: 130px;
     font-weight: bold;
     font-size: 16px;
+    border: 0;
 }
 
 button.search-button:hover {
@@ -258,18 +275,23 @@ button.search-button:hover {
 
 .book-hotel {
     position: absolute;
-    margin-top: 552px;
-    text-align: center;
-    height: 120px;
+    margin-top: 567px;
+    height: 122px;
     width: 100%;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .book-hotel-container {
-    width: 75%;
+    padding-top: 15px;
+}
+
+p.cancel {
+    position: relative;
+    font-size: 0.75rem;
+    float: right;
 }
 
 .book-hotel ul {
@@ -290,7 +312,7 @@ button.search-button:hover {
 
 .book-hotel ul li input[type="text"] {
     line-height: 40px;
-    width: 220px;
+    width: 203px;
 }
 
 .book-hotel ul li select {
@@ -310,7 +332,7 @@ button.search-button:hover {
 button.book-button {
     height: 42px;
     background: #7ACC29;
-    width: 190px;
+    width: 189px;
 }
 
 button.book-button:hover {
