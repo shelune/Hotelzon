@@ -379,7 +379,6 @@ hr.main-hr {
     width: 33%;
     height: 192px;
     position: relative;
-    background-position: center;
     font-weight: 400;
 }
 
@@ -481,8 +480,9 @@ hr.main-hr {
 
 .subscribe {
     z-index: -1;
-    background: url('img/woman_laptop.jpg');
-    background-position: center;
+    background-size: 80%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,155,155,0) 5%, rgba(255,255,255,1) 100%), url('img/woman_laptop.jpg');
+    background-position: top right;
     height: 672px;
 }
 
@@ -499,14 +499,21 @@ hr.main-hr {
 }
 
 .news-heading h1 {
-    margin-bottom: -2%;
+    margin-top: 39px;
+    margin-left: 12px;
+    font-size: 2.375rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .news-heading p {
     font-family: 'Open Sans Light', sans-serif;
     width: 70%;
     color: #fff;
-    font-size: 200%;
+    font-size: 1.75rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    line-height: 1.7;
+    margin-top: -23px;
+    margin-left: 12px;
 }
 
 .news-heading ul {
@@ -517,25 +524,31 @@ hr.main-hr {
     display: flex;
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
-    margin-left: -3.5%;
+    margin-left: -27px;
+    margin-top: -9px;
 }
 
 .news-heading ul li input[type="text"] {
     line-height: 42px;
-    width: 350px;
+    width: 348px;
     border: none;
 }
 
 .submit {
     border: none;
-    width: 380px;
+    width: 379px;
     height: 42px;
-    background: #7ACC29;
+    background: #78be20;
     cursor: pointer;
+    font-size: 1.0125rem;
 }
 
 .submit:hover {
-    background-color: #6BB224;;
+    background-color: #6AA81C;
+}
+
+.more-news {
+    margin-top: -74px;
 }
 
 .more-news .container-more-news {
@@ -546,6 +559,7 @@ hr.main-hr {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    margin: 5px 5px 0 0;
 }
 
 .more-news .news-piece {
@@ -611,12 +625,35 @@ hr.main-hr {
 
 .travelport-hotelzon, .for-hotels, .for-companies, .contact-info {
     width: 20%;
-    margin: 45px 15px;
+    margin: 46px 0;
+}
+
+.travelport-hotelzon {
+    margin-left: 12px;
+}
+
+.for-hotels {
+    margin-left: 58px;
+}
+
+.for-companies {
+    margin-left: 10px;
+}
+
+.contact-info {
+    margin-left: 9px;
+}
+
+.contact-info ul li {
+    font-size: 16px;
+    line-height: 1.575;
 }
 
 .upper-footer ul {
     padding-left: 0;
-    line-height: 1.8;
+    margin-top: -4px;
+    font-size: 0.875rem;
+    line-height: 1.85657;
 }
 
 .upper-footer ul li {
@@ -630,12 +667,8 @@ hr.main-hr {
 
 .lower-footer {
     height: 112px;
-    width: 70%;
+    width: 68.5%;
     margin: 0 auto;
-}
-
-.contact-info {
-    font-size: 16px;
 }
 
 .media {
@@ -647,11 +680,11 @@ hr.main-hr {
 }
 
 .terms, .policy, .copyright {
-    color: gray;
+    color: #7a858b;
 }
 
 .terms a, .policy a {
-    color: black;
+    color: #565e63;
 }
 
 .right-side-btm, .left-side-btm {
@@ -662,5 +695,11 @@ hr.main-hr {
 }
 
 .left-side-btm {
+    margin-top: 2px;
     float: left;
+}
+
+.right-side-btm {
+    font-size: 0.875rem;
+    margin-top: -1px;
 }
