@@ -12,6 +12,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+img {
+    object-fit: cover;
+}
+
 header {
     z-index: -1;
     background: url('img/hotelzon_jumbotron.jpg') center bottom;
@@ -92,10 +96,17 @@ footer {
     color: #fff;
 }
 
-.container-header {
+.container-70 {
     max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-header {
+    width: 865px;
     margin: 0 auto;
 }
+
 
 .left-side {
     float: left;
@@ -108,7 +119,6 @@ footer {
 }
 
 .right-side {
-    position: relative;
     float: right;
     margin-top: 15px;
     padding-right: 56px;
@@ -128,9 +138,7 @@ footer {
     width: 150px;
     background-color: white;
     position: absolute;
-    left: 150px;
     display: none;
-    border: 1px solid lightblue;
 }
 
 .lang-box:target {
@@ -197,9 +205,9 @@ hr.jumbotron-hr {
 }
 
 .lower-header {
-    width: 70%;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 84px;
+    width: 1184px;
 }
 
 .left-link {
@@ -216,8 +224,7 @@ hr.jumbotron-hr {
 
 .right-login {
     float: right;
-    margin-top: 1%;
-    margin-right: -24px;
+    margin-top: 11px;
 }
 
 .right-login ul {
@@ -385,6 +392,7 @@ hr.main-hr {
 .container-features {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.65) 100%), url('img/man_hotelroom.jpg');
     background-size: cover;
+    background-position: 20px -20px;
 }
 
 .container-news {
@@ -481,7 +489,7 @@ hr.main-hr {
 .subscribe {
     z-index: -1;
     background-size: 80%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(155,155,155,0) 5%, rgba(255,255,255,1) 100%), url('img/woman_laptop.jpg');
+    background: url('img/woman_laptop.jpg');
     background-position: top right;
     height: 672px;
 }
@@ -602,7 +610,7 @@ hr.main-hr {
     bottom: 0;
     font-size: 12px;
     opacity: 0.5;
-    padding: 15px 20px 10px 20px;
+    padding: 12px 20px 10px 20px;
     border-top: 1px solid rgba(255,255,255,.25);
 }
 
