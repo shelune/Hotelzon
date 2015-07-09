@@ -7,12 +7,12 @@ $(document).ready(function () {
         user: ['user1', 'user2', 'user3'],
         pass: ['pass1', 'pass2', 'pass3']
     },
+        username = $('input[name="username"]'),
+        password = $('input[name="password"]'),
         containsArray = function () {
-            var username = $('input[name="username"]').val(),
-                password = $('input[name="password"]').val(),
-                i;
+            var i;
             for (i = 0; i < userPass.user.length; i += 1) {
-                if (username === userPass.user[i] && password === userPass.pass[i]) {
+                if (username.val() === userPass.user[i] && password.val() === userPass.pass[i]) {
                     return true;
                 }
             }
@@ -20,21 +20,29 @@ $(document).ready(function () {
         },
         checkValid = function () {
             if (containsArray()) {
+                username.removeClass('box-shadow');
+                password.removeClass('box-shadow');
                 console.log("AUTHORIZED!");
             } else {
-                $('input[name="username"]').css("box-shadow", "inset 0 0 5px red");
-                $('input[name="password"]').css("box-shadow", "inset 0 0 5px red");
+                username.addClass('box-shadow');
+                password.addClass('box-shadow');
                 console.log("FAIL");
             }
         };
 
 
-    $('button.login').click(function () {
+    $('.login').click(function () {
         checkValid();
     });
     $('.right-login input').keypress(function (e) {
         if (e.which === 13) {
             checkValid();
+        }
+    });
+    $(password).keypress(function (e) {
+        if (username.val().length < 1 && password.val().length < 1) {
+            console.log("EMPTY USERNAME!");
+            username.addClass('box-shadow');
         }
     });
 });
